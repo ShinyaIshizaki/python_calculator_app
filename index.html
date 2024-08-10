@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caluculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.7.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.7.1/core.js"></script>
+</head>
+<body>
+  <h1>Caluculator</h1>
+  <input type="text" id="number_1" required>
+  <select id="selected-compute" required>
+    <option value="selection" selected>+ - * /</option>
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="devide">/</option>
+  </select>
+  <input type="text" id="number_2" autofocus required>
+  <button py-click="calculate">=</button>
+  <input type="text" id="answer">
+  
+  <script type="py" src="./main.py" config="./pyscript.json"></script>
+</body>
+</html>
